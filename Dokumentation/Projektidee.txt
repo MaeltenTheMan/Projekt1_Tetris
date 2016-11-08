@@ -1,0 +1,42 @@
+Projektidee
+
+Malte Gruntzdorff
+2206404
+
+Projekttitel: 4D-Tetris
+Allgemeiner Spielablauf
+-Anlehnung an das Spiel Tetris
+-Der Spieler interagiert auf vier Spielfeldern gleichzeitig
+-Die Spielwelt ist in fünf Teile unterteilt
+-Ein Quadrat in der Mitte ist das Startfeld
+-an jeder Seite des Startfeldes liegt ein Spielfeld an
+-Das Programm lässt im Startfeld Spielsteine erscheinen
+-Diese Spielsteine bestehen jeweils aus vier Blöcken, die zusammenhängend unterschiedliche Konstellationen ergeben
+-Vor dem Erscheinen neuer Spielsteine rotiert die gesamte Spielwelt, sodass die Spielfelder immer anders angeordnet sind
+-Die Spielsteine bewegen sich in das derzeit unten stehende Spielfeld
+-Wenn eine Reihe auf einem Spielfeld mit Blöcken der Spielsteine ausgefüllt ist, wird diese Reihe gelöscht -der Punktestand erhöht sich-
+-Die Geschwindigkeit, in der sich die Spielsteine bewegen erhöht sich mit der Zeit
+-Das Spiel ist verloren, wenn sich Blöcke eines Spielsteins beim Erscheinen eines neuen Spielsteins noch im Startfeld befinden
+-Die Anzahl der gelöschten Reihen wird im Programm als Highscore gespeichert
+
+Interaktion des Spielers
+-Sobald der Spielstein das Startfeld verlassen hat, hat der Spieler die Möglichkeit mit den Spielsteinen zu interagieren
+-Der Spieler steuert ihre Bewegung
+-Er kann die aktuell erschienenden Spielsteine durch Tastendruck oder Schaltflächendrücken:
+-nach links und rechts bewegen
+-ihren Fall beschleunigen
+-oder sie rotieren lassen
+-Einschränkung links und rechts Bewegung:
+	-Die Seiten des aktuellen Spielfeldes dienen der Begrenzung, eine Bewegung hindurch ist nicht möglich
+-Einschränkung des Fallens:
+	-Der Fall des Spielsteins ist beendet sobald: 
+		-der Spielstein einen im Spielfeld enthaltenen Block eines anderen Spielsteins berührt
+		-oder die untere Begrenzung des Spielfeldes berührt wird
+-Einschränkung Rotation:
+	-Sobald der Fall des Spielsteins beendet ist, ist auch keine Rotation des Spielsteines mehr möglich
+
+Interaktion mehrerer Spieler
+	-Die Spieler können sich in einer Lobby treffen und gemeinsam das Spiel starten
+	-Hierbei gibt es eine Zeitvorgabe
+	-Der Spieler der nach Ablauf der Zeitvorgabe die meisten Punkte gesammelt hat, gewinnt das Spiel
+		
